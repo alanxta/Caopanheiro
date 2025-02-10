@@ -1,0 +1,68 @@
+@charset 'UTF-8';
+
+:root {
+  --color1: #064a75;
+  --color2: #ffe1b7;
+  --color3: #ca964e;
+}
+
+label{
+  margin-top: 10px;
+}
+
+form {
+  display: grid;
+  grid-gap: 5px;
+}
+
+label {
+  font-weight: bold;
+}
+
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+/*Dropzone de imagens no Cadastro dos Pets*/
+.dropzone-area {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.uploadIcon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.dropzone-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.dropzone-actions button {
+
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+  background-color: var(--color1);
+  transition: background-color 0.3s ease;
+}
+
+.dropzone-actions button:hover {
+  background-color: var(--color3);
+  color: white;
+}
+
+div#submit{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
